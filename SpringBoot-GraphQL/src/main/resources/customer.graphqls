@@ -1,0 +1,24 @@
+type Customer {
+    id: ID!,
+    name: String!,
+    surName: String!,
+    mail: String,
+    address: String,
+    birthofDate: String
+}
+
+input CustomerDto {
+    name: String!,
+    surName: String!,
+    mail: String,
+    address: String,
+}
+
+type Query {
+    getAllLikeCustomers(name: String):[Customer]
+    findById(id: ID):Customer
+}
+
+type Mutation {
+    saveCustomer(customerDto: CustomerDto):Customer
+}

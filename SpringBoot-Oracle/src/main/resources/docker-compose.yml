@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  oracle-se:
+    image: oracle/database:18.4.0-xe  #kendi pcmde oracle 18c xe imajı
+    environment:
+      ORACLE_PWD: mypass
+    ports:
+      - "1521:1521"
+      - "5500:5500"
+      - "8080:8080"
