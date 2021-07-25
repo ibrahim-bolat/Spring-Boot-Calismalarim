@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  minio-s3:
+    image: minio/minio:RELEASE.2021-02-11T08-23-43Z
+    ports:
+      - 9090:9000
+    environment:
+      MINIO_ROOT_USER: ibo
+      MINIO_ROOT_PASSWORD: ibo12345
+    command: server /data
