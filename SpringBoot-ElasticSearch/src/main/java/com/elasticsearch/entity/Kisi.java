@@ -1,38 +1,38 @@
-package com.mongodb.model;
+package com.elasticsearch.entity;
+
+import java.time.LocalDate;
 
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Field;
+import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
-import java.io.Serializable;
-import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "kisi")
-public class Kisi implements Serializable {
-
+@Document(indexName = "kisi")
+public class Kisi {
     @Id
     private String id;
 
-    @Field(name = "ad")
+    @Field(name = "ad", type = FieldType.Text)
     private String ad;
 
-    @Field(name = "soyad")
+    @Field(name = "soyad", type = FieldType.Text)
     private String soyad;
 
-    @Field(name= "cocuk_sayisi")
+    @Field(name= "cocuk_sayisi",type = FieldType.Integer)
     private Integer cocukSayisi;
 
-    @Field(name = "adres")
+    @Field(name = "adres", type = FieldType.Text)
     private String adres;
 
-    @Field(name= "dogum_tarihi")
+    @Field(name= "dogum_tarihi",type=FieldType.Date, pattern="uuuu-MM-dd")
     private LocalDate dogumTarihi;
 
     public Kisi(String ad, String soyad, int cocukSayisi, String adres, LocalDate dogumTarihi) {
@@ -43,3 +43,4 @@ public class Kisi implements Serializable {
         this.dogumTarihi = dogumTarihi;
     }
 }
+

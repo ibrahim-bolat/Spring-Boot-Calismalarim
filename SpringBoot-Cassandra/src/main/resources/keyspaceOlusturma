@@ -1,13 +1,12 @@
 create keyspace ibo
     WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
 use ibo;
-use ibo;
 
 CREATE TABLE kisi(
-       id int PRIMARY KEY,
+       id uuid PRIMARY KEY,
        ad text,
        soyad text,
-       pricae int,
+       cocukSayisi int,
        adres varchar,
        dogumTarihi timestamp
       );

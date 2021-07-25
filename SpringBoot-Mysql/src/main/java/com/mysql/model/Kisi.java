@@ -1,18 +1,26 @@
-package com.postgre.model;
+package com.mysql.model;
 
-import java.util.Date;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+
 import javax.persistence.*;
-import lombok.*;
+import java.io.Serializable;
+import java.util.Date;
 
-@AllArgsConstructor
-@NoArgsConstructor
+
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "kisi")
-public class Kisi {
+public class Kisi implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(name = "ad",nullable = false,length = 25)

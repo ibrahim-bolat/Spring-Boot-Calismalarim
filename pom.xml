@@ -19,6 +19,36 @@
         <module>SpringBoot-Postgresql</module>
         <module>SpringBoot-RabbitMq</module>
         <module>SpringBoot-RestTemplate</module>
+        <module>SpringBoot-Redis-Cache-Postgresql</module>
+        <module>SpringBoot-Redis-RedisTemplate-CRUD</module>
+        <module>SpringBoot-Redis-RedisTemplate-CRUD2</module>
+        <module>SpringBoot-WebSocket</module>
+        <module>SpringBoot-Pagination-MongoDb</module>
+        <module>SpringBoot-EventListener</module>
+        <module>SpringBoot-FileUpload-Mongo-GridFs</module>
+        <module>SpringBoot-Kafka</module>
+        <module>SpringBoot-Mongock</module>
+        <module>SpringBoot-Flyway</module>
+        <module>SpringBoot-SpringCloudGatewayApi</module>
+        <module>SpringBoot-ManuelApiVersiyoning</module>
+        <module>SpringBoot-ExceptionHandling</module>
+        <module>SpringBoot-HazelcastCache</module>
+        <module>SpringBoot-ReactiveWebFluxPostgreCRUD</module>
+        <module>SpringBoot-ReactiveWebFluxMongoCRUD</module>
+        <module>SpringBoot-Logging</module>
+        <module>SpringBoot-ModelMapper</module>
+        <module>SpringBoot-Validation</module>
+        <module>SpringBoot-Hateoas</module>
+        <module>SpringBoot-Neo4j</module>
+        <module>SpringBoot-Redis-PubSub</module>
+        <module>SpringBoot-SpringSecurityJpaMysql</module>
+        <module>SpringBoot-SpringSecurity-JWT</module>
+        <module>SpringBoot-MinioS3</module>
+        <module>SpringBoot-AWS-S3</module>
+        <module>SpringBoot-Swagger</module>
+        <module>SpringBoot-TransactionalManagement</module>
+        <module>SpringBoot-UnitTest</module>
+        <module>SpringBoot-IntegrationTest</module>
     </modules>
     <build>
         <plugins>
