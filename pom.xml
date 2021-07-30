@@ -15,6 +15,7 @@
         <module>SpringBoot-GraphQL</module>
         <module>SpringBoot-Mongodb</module>
         <module>SpringBoot-Mysql</module>
+        <module>SpringBoot-MSSQL</module>
         <module>SpringBoot-Oracle</module>
         <module>SpringBoot-Postgresql</module>
         <module>SpringBoot-RabbitMq</module>
